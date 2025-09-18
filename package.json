@@ -1,43 +1,43 @@
 {
-  "name": "lil-shunshine-thrift-fullstack",
+  "name": "lil-shunshine-thrift-frontend",
   "version": "1.0.0",
-  "description": "Full stack application for Lil Sunshine Thrift Shop",
-  "main": "start_fullstack.js",
+  "description": "Frontend for lil.shunshine.thrift - Vintage & Thrift Fashion Store",
+  "private": true,
   "scripts": {
-    "setup": "node setup_fullstack.js",
-    "start": "node start_fullstack.js",
-    "start:api": "cd api && php start_api.php",
-    "start:frontend": "cd lil-shunshine-thrift-frontend && npm run dev",
-    "migrate": "cd api && php database/migrate.php",
-    "install:frontend": "cd lil-shunshine-thrift-frontend && npm install",
-    "build:frontend": "cd lil-shunshine-thrift-frontend && npm run build",
-    "test": "node test_connection.js",
-    "test:api": "node test_connection.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "type-check": "tsc --noEmit",
+    "start:dev": "node start_frontend.js"
   },
-  "keywords": [
-    "thrift",
-    "vintage",
-    "fashion",
-    "ecommerce",
-    "nextjs",
-    "php",
-    "api"
-  ],
-  "author": "Lil Sunshine Team",
-  "license": "MIT",
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lilshunshine/thrift-shop.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lilshunshine/thrift-shop/issues"
-  },
-  "homepage": "https://github.com/lilshunshine/thrift-shop#readme",
   "dependencies": {
-    "axios": "^1.12.2"
+    "@hookform/resolvers": "^3.3.2",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.6.2",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.460.0",
+    "next": "15.5.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-hook-form": "^7.48.2",
+    "tailwind-merge": "^2.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.5.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
   }
 }
