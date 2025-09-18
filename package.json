@@ -1,0 +1,43 @@
+{
+  "name": "lil-shunshine-thrift-fullstack",
+  "version": "1.0.0",
+  "description": "Full stack application for Lil Sunshine Thrift Shop",
+  "main": "start_fullstack.js",
+  "scripts": {
+    "setup": "node setup_fullstack.js",
+    "start": "node start_fullstack.js",
+    "start:api": "cd api && php start_api.php",
+    "start:frontend": "cd lil-shunshine-thrift-frontend && npm run dev",
+    "migrate": "cd api && php database/migrate.php",
+    "install:frontend": "cd lil-shunshine-thrift-frontend && npm install",
+    "build:frontend": "cd lil-shunshine-thrift-frontend && npm run build",
+    "test": "node test_connection.js",
+    "test:api": "node test_connection.js"
+  },
+  "keywords": [
+    "thrift",
+    "vintage",
+    "fashion",
+    "ecommerce",
+    "nextjs",
+    "php",
+    "api"
+  ],
+  "author": "Lil Sunshine Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilshunshine/thrift-shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lilshunshine/thrift-shop/issues"
+  },
+  "homepage": "https://github.com/lilshunshine/thrift-shop#readme",
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
